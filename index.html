@@ -3,7 +3,7 @@
 <script  src="./script.js"></script>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conversor de Moedas</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="shortcut icon" href="https://s.fx-w.io/images/icons/svg/dollar-euro-exchange.svg" type="image/x-icon">
@@ -22,25 +22,24 @@
       Selecione a moeda que deseja converter
     </p>
     <div class="moedas">
-      <input type="radio" id="dolar" name="moeda" value="dolar"> <label for="dolar"> U$ Dólar</label>
-      <input type="radio" id="euro" name="moeda" value="euro"> <label for="euro"> € Euro</label>
-      <input type="radio" id="pesoarg" name="moeda" value="pesoarg"> <label for="pesoarg"> $ PesoARG</label>
-      <input type="radio" id="rublo" name="moeda" value="rublo"> <label for="rublo"> ₽ Rublo</label>
-      <input type="radio" id="yuan" name="moeda" value="yuan"> <label for="yuan"> ¥ Yuan</label>
-      <p id="result"> </p>
+      <div class="radios"> <input type="radio" id="euro" name="moeda" value="euro"> <label for="euro"> € Euro</label></div>
+      <div class="radios"> <input type="radio" id="dolar" name="moeda" value="dolar"> <label for="dolar"> U$ Dólar</label> </div>
+      <div class="radios"> <input type="radio" id="pesoarg" name="moeda" value="pesoarg"> <label for="pesoarg"> $ PesoARG</label></div>
+      <div class="radios"> <input type="radio" id="rublo" name="moeda" value="rublo"> <label for="rublo"> ₽ Rublo</label></div>
+      <div class="radios"> <input type="radio" id="yuan" name="moeda" value="yuan"> <label for="yuan"> ¥ Yuan</label></div>
       <br>
-
     </div>
     <div class="form-wrapper">
       <input type="number" id="real" name="real" placeholder="Insira valor em Real R$">
       <button onClick="converter()">Converter</button>
 
     </div>
-  </div>
+  
   <div id="resultado" class="resultado"> <strong>*Cotação atualizada automaticamente </strong> </div>
   <a href="https://github.com/LeozinN8777" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" class="github-logo">
   </a>
+</div>
 </body>
 
 </html>
