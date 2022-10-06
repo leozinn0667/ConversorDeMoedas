@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<script  src="./script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="https://s.fx-w.io/images/icons/svg/dollar-euro-exchange.svg" type="image/x-icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      <img src="https://media.discordapp.net/attachments/764118871640637491/1018617333708771378/unknown.png?width=1651&height=119" class="page-logo" alt="">
+    </h1>
+    <p class="page-subtitle">
+      Selecione a moeda que deseja converter
+    </p>
+    <div class="moedas">
+      <input type="radio" id="dolar" name="moeda" value="dolar"> <label for="dolar"> U$ Dólar</label>
+      <input type="radio" id="euro" name="moeda" value="euro"> <label for="euro"> € Euro</label>
+      <input type="radio" id="pesoarg" name="moeda" value="pesoarg"> <label for="pesoarg"> $ PesoARG</label>
+      <input type="radio" id="rublo" name="moeda" value="rublo"> <label for="rublo"> ₽ Rublo</label>
+      <input type="radio" id="yuan" name="moeda" value="yuan"> <label for="yuan"> ¥ Yuan</label>
+      <p id="result"> </p>
+      <br>
+
+    </div>
+    <div class="form-wrapper">
+      <input type="number" id="real" name="real" placeholder="Insira valor em Real R$">
+      <button onClick="converter()">Converter</button>
+
+    </div>
+  </div>
+  <div id="resultado" class="resultado"> <strong>*Cotação atualizada automaticamente </strong> </div>
+  <a href="https://github.com/LeozinN8777" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" class="github-logo">
+  </a>
+</body>
+
+</html>
